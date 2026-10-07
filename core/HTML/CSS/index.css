@@ -1,0 +1,121 @@
+:root {
+    --bg-color: #0b0f19;
+    --card-bg: #151d30;
+    --accent-color: #3b82f6;
+    --text-color: #f3f4f6;
+    --text-muted: #9ca3af;
+    --success: #10b981;
+}
+
+
+/*Главный селектор страницы*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*стиль тега Тела*/
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*Стиль тега - Заголовок*/
+header {
+    background-color: var(--card-bg);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #23314f;
+}
+/*Стиль логотипа*/
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.weather-widget {
+    background: #1e293b;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #23314f;
+}
+
+.balance {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: var(--success);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+.logs {
+    background-color: #020617;
+    padding: 1rem;
+    border-radius: 6px;
+    height: 150px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: #38bdf8;
+}

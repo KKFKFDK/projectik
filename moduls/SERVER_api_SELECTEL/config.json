@@ -1,0 +1,6 @@
+{
+  "server_url": "https://selectel.internal",
+  "environment": "production",
+  "timeout_ms": 5000,
+  "allowed_methods": ["GET", "POST"]
+}
